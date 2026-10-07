@@ -34,20 +34,19 @@ set(GPJSON_TEST_INCLUDE_DIRS
 add_executable(test_cborobject tests/test_cborobject.cpp)
 target_include_directories(test_cborobject PRIVATE ${GPJSON_TEST_INCLUDE_DIRS})
 target_link_libraries(test_cborobject PRIVATE CborObject)
-add_test(NAME cborobject COMMAND test_cborobject)
+add_test(NAME cborobject COMMAND $<TARGET_FILE:test_cborobject>)
 
 add_executable(test_cbor_api_verify tests/test_cbor_api_verify.cpp)
 target_include_directories(test_cbor_api_verify PRIVATE ${GPJSON_TEST_INCLUDE_DIRS})
 target_link_libraries(test_cbor_api_verify PRIVATE CborObject)
-add_test(NAME cbor_api_verify COMMAND test_cbor_api_verify)
+add_test(NAME cbor_api_verify COMMAND $<TARGET_FILE:test_cbor_api_verify>)
 
 add_executable(test_geojson tests/test_geojson.cpp)
 target_include_directories(test_geojson PRIVATE ${GPJSON_TEST_INCLUDE_DIRS})
 target_link_libraries(test_geojson PRIVATE GeoJson CborObject)
-add_test(NAME geojson COMMAND test_geojson)
+add_test(NAME geojson COMMAND $<TARGET_FILE:test_geojson>)
 
-# Pure-C CBOR examples (build also verifies that the public C core compiles).
-option(GPJSON_BUILD_C_EXAMPLES "Build the C CBOR examples" ON)
-if(GPJSON_BUILD_C_EXAMPLES)
-    add_subdirectory(CborObject/Examples/C)
-endif()
+# The snippets under CborObject/Examples are reference code and are not part
+# of the default build/test (the public C core is already compiled and tested
+# via test_cbor_api_verify). The pure-C examples can be configured standalone:
+#   cmake -S CborObject/Examples/C -B build-c

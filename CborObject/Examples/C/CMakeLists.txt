@@ -6,13 +6,13 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
 # 包含目录
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../cbor)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../cbor)
 
 # CBOR核心源文件
 set(CBOR_SOURCES
-    ../cbor/cbor.c
-    ../cbor/json.c
-    ../cbor/pointer.c
+    ../../cbor/cbor.c
+    ../../cbor/json.c
+    ../../cbor/pointer.c
 )
 
 # 禁用警告（Windows MSVC）

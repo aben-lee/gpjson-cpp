@@ -57,8 +57,10 @@ The CTest suite runs:
 - `cbor_api_verify` — the public C CBOR/JSON core
 - `geojson` — RFC 7946 geometry construction and (de)serialization
 
-The pure-C examples under `CborObject/Examples/C` are also built by default
-(set `-DGPJSON_BUILD_C_EXAMPLES=OFF` to disable).
+The default build covers the two libraries and the three test drivers. The
+snippets under [`CborObject/Examples/`](CborObject/Examples) are reference
+code; the pure-C examples can also be configured standalone with
+`cmake -S CborObject/Examples/C -B build-c`.
 
 ## Examples
 
