@@ -1,0 +1,21 @@
+{
+  "name": "cborobject-nodejs",
+  "version": "1.0.0",
+  "description": "Node.js FFI wrapper for CborObject C library",
+  "main": "cbor-wrapper.js",
+  "scripts": {
+    "test": "node cbor-wrapper.js"
+  },
+  "keywords": [
+    "cbor",
+    "json",
+    "ffi",
+    "native"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ffi-napi": "^4.0.3",
+    "ref-napi": "^3.0.3"
+  }
+}

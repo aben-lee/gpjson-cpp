@@ -1,0 +1,57 @@
+# CITATION.cff — gpjson-cpp (C++/CBOR foundation for GPJSON 4.x)
+# TODO after archival: add a ScienceDB DOI for this code record if one is created.
+cff-version: 1.2.0
+message: "If you use this software, please cite it together with the companion article."
+title: "gpjson-cpp: a Qt-free C++/CBOR foundation and GeoJSON geometry layer for GPJSON"
+version: 1.0.0
+date-released: 2026-10-07
+repository-code: "https://github.com/aben-lee/gpjson-cpp"
+url: "https://github.com/aben-lee/gpjson-cpp"
+license: BSD-3-Clause
+keywords:
+  - GPJSON
+  - CBOR
+  - GeoJSON
+  - geophysical monitoring
+  - C++
+  - binary serialization
+  - IoT
+  - digital twin
+  - remote sensing
+authors:
+  - family-names: Li
+    given-names: Xiaobin
+    email: alxb98@126.com
+    affiliation: School of Resources and Environment, Henan Polytechnic University, Jiaozuo 454000, China
+  - family-names: Luo
+    given-names: Zijing
+    email: 10460231462@hpu.edu.cn
+    affiliation: School of Resources and Environment, Henan Polytechnic University, Jiaozuo 454000, China
+  - family-names: Yu
+    given-names: Xiao
+    email: 2834119156@qq.com
+    affiliation: Key Laboratory of Metallogeny and Mineral Assessment, Ministry of Natural Resources; Institute of Mineral Resources, Chinese Academy of Geological Sciences, Beijing 100037, China
+  - family-names: Cui
+    given-names: Shaobei
+    email: 395579229@qq.com
+    affiliation: Chongqing Research Institute Co., Ltd., China Coal Technology and Engineering Group, Chongqing 400039, China
+  - family-names: Jin
+    given-names: Shuanggen
+    email: sgjin@hpu.edu.cn
+    affiliation: School of Resources and Environment, Henan Polytechnic University, Jiaozuo 454000, China
+preferred-citation:
+  type: article
+  title: "Autonomous Geophysical Monitoring for Infrastructure Digital Twins with Intelligent Geo-Data and Self-organizing Pipelines"
+  authors:
+    - family-names: Li
+      given-names: Xiaobin
+    - family-names: Luo
+      given-names: Zijing
+    - family-names: Yu
+      given-names: Xiao
+    - family-names: Cui
+      given-names: Shaobei
+    - family-names: Jin
+      given-names: Shuanggen
+  journal: IEEE Geoscience and Remote Sensing Magazine
+  year: 2026
